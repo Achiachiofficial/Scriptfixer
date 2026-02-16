@@ -4,8 +4,8 @@ import requests
 import json
 
 # ---------- CONFIGURATION ----------
-SERPER_API_KEY = "4f5a0079e3ed189c68a558494e89a573be76befe"
-OPENROUTER_API_KEY = "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"
+SERPER_API_KEY = st.secrets["SERPER_API_KEY"]
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 st.set_page_config(page_title="BLACK HAT SCRIPT FIXER", layout="wide")
 
