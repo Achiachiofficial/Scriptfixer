@@ -60,7 +60,7 @@ def fix_script_ai(original_code):
     """
     
     response = client.chat.completions.create(
-        model="meta-llama/llama-3-70b-instruct:free", # Free model එකක් වුණත් 70B එක පට්ට powerful
+        model="meta-llama/llama-3.1-8b-instruct:free", # Free model එකක් වුණත් 70B එක පට්ට powerful
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content
